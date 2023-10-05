@@ -1,0 +1,27 @@
+### Post Data = Create Data
+POST http://localhost:3000/api/v1/posts
+Content-Type: application/json
+
+{
+    "title":"Program Pembuatan Aplikasi Dekstop",
+    "body":"materi pembelajaran untuk membuat program aplikasi dekstop"
+}
+
+### Get all data
+GET http://localhost:3000/api/v1/posts?page=1&limit=10
+
+### Get detail data
+GET http://localhost:3000/api/v1/posts/22
+
+### Update data
+PUT http://localhost:3000/api/v1/posts/22
+Content-Type: application/json
+
+{
+    "title":"Program Pembuatan Website",
+    "body":"materi pembelajaran untuk membuat program website"
+}
+
+### Delete data
+DELETE http://localhost:3000/api/v1/posts/17
+Content-Type: application/json
